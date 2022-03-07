@@ -1,8 +1,8 @@
 import React from 'react'
-import { StudentProvider } from './StudentContext'
-import StudentList from './StudentList'
-import StudentStatus from './studentStatus'
-import AddStudent from './AddStudent'
+import { StudentProvider } from './ContextApi/StudentContext'
+import StudentList from './ContextApi/StudentList'
+import StudentStatus from './ContextApi/studentStatus'
+import AddStudent from './ContextApi/AddStudent'
 
 const App = () => {
   return (
