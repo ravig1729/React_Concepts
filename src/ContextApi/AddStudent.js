@@ -10,12 +10,13 @@ const AddStudent = () => {
     const [students, setStudents] = useContext(StudentContext);
 
     const handleAddStudent = () => {
-        // let studentObj = { 
-        //     Name:Name,
-        //     studentClass:Class,
-        //     info:Info
-        // }
-        setStudents( [ ...students, { Name:Name,studentClass:Class,info:Info } ] )
+        let studentObj = { 
+            id:students.length,
+            Name:Name,
+            studentClass:Class,
+            info:Info
+        }
+        setStudents( [ ...students, studentObj ] )
 
     }
     return (

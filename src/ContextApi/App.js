@@ -17,3 +17,9 @@ const App = () => {
 }
 
 export default App
+
+
+
+
+// Hooks : They allow you to use React Features without having to write a class.
+// Avoids the whole confsion with 'this' keyword.
