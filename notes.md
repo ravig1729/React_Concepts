@@ -129,3 +129,56 @@ When a component is being removed from the DOM
 //second element is a state setter function.
 //When working with object or array, always make sure to use spread operator.
 //use key when using map.
+
+## Redux 
+//is state container for JS apps.
+//Redux is a pattern and library for managing and updating application state,
+//using events called 'Action' it serves as a centralzed store for state that needs to be used across your entire application , with some rules.
+
+## 1. ACTION  ( PURE OBJECT )
+// Actions are plain JS objects, that have type field.
+// Actions only tell 'WHAT TO DO', But they donts tell how to do.
+
+
+// {
+//     type: 'INCREMENT',
+//     payload: num
+// }
+// {
+//     type : 'DECREMENT',
+//     payload: num
+// }
+
+// const incNumber = (num) => {
+//     return {
+//         type: 'INCREMENT',
+//         payload: num
+//     }
+// }
+// const decNumber = (num) => {
+//     return {
+//         type: 'DECREMENT',
+//         payload: num //api calls
+//     }
+// }
+
+
+## REDUCER
+// Reducer are functions that take the current state and an action as argument and
+// return a new state result.
+// const stateValue = useState('')
+// const initialState = 0
+// const changeTheNumber = ( state = initialState, action ) => {
+    
+//     switch( action.type ) {
+//         case "INCREMENT": return state + action.payload;
+//         case "DECREMENT" :   return state - 1;
+//         default : return state
+//     }
+// }
+
+## STORE
+// ITS IMPORTANT TO NOTE THAT YOU'LL ONLY HAVE A SINGLE STORE IN A REDUX APPLICATION.
+// EVERY REDUX STORE HAS A SINGLE ROOT REUDUCER FUNCTION.
+// import {createStore} from 'redux'
+// const store = createStore(rootReducer)
