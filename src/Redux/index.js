@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import {App}  from "./App";
-import store from "./Redux 2/Store";
+import App  from "./App";
+import store from "./Store";
 
 
 ReactDOM.render(
@@ -11,3 +11,5 @@ ReactDOM.render(
     </Provider>,
     document.querySelector('#root')
 );
+
+//react-redux is the official redux UI binding library for react.

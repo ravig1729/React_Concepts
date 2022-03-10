@@ -14,7 +14,7 @@
 // state -- class component
 // state is a plain javascript Object used by react to respresent about component's current situation. 
 // state = {
-
+        name='',
 // }
 
 // render : required method : implement in class compoennt to render JSX.
