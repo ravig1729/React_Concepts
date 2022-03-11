@@ -1,5 +1,5 @@
 import React from 'react'
-import AddStudent from './Redux 2/AddStudent'
+import AddStudent from './AddStudent'
 
 export const App = () => {
     return (
